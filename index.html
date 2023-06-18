@@ -8,50 +8,168 @@
   
   <title>Frontend Mentor | Single Price Grid Component</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+  /*General Styles*/
+
+    html {
+      font-family: 'Karla', sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      background-color: hsl(204, 43%, 93%);
+    }
+
+    .content-wrapper {
+      padding: 10px 15px 25px 25px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    #join {
+      background-color: white; 
+    }
+
+    #join h1 {
+      color: hsl(179, 62%, 43%);
+      
+    }
+
+    #join .guarantee {
+      color: hsl(71, 73%, 54%);
+      font-size: 16px;
+      font-weight: 700;
+      padding-right: 30px;
+    }
+
+    #join .description {
+      color: hsl(218, 22%, 67%);
+      font-size: 16px;
+      font-weight: 400;
+      padding-right: 30px;
+    }
+
+    #subscription {
+      background-color: hsl(179, 62%, 43%);
+      
+    }
+
+    #subscription h1 {
+      color: hsl(204, 43%, 93%);
+    }
+
+    #subscription .cost {
+      color: white;
+      font-size: 32px;
+      margin: 0px;
+    }
+
+    #subscription .cost span {
+      color: hsl(179, 53%, 65%);
+      font-size: 16px;
+    }
+
+    #subscription p {
+      color: hsl(204, 43%, 93%);
+      margin-top: 8px;
+    }
+
+    #subscription .button {
+      color: white;
+      font-weight: 700;
+      background-color: hsl(71, 73%, 54%);
+      padding: 15px;
+      border-radius: 5%;
+      margin: 20px 10px 0px 0px;
+      text-align: center;
+    }
+
+    #why {
+      background-color: hsl(179, 43%, 50%);
+      color:  hsl(204, 43%, 93%);
+      padding-bottom: 0px;
+    }
+
+    #why p {
+      color:hsl(204, 43%, 93%);
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 0px;
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+  /*Mobile Styles*/
+  @media only screen and (min-width: 0px) {
+
+    body {
+      width: 375px;
+    }
+
+  }
+
   </style>
+
 </head>
+
 <body>
 
   <section id="join">
 
-    <h1>Join our community</h1>
+    <div class="content-wrapper">
 
-    <p>30-day, hassle-free money back guarantee</p>
+      <h1>Join our community</h1>
 
-    <p>Gain access to our full library of tutorials along with expert code reviews. 
-    Perfect for any developers who are serious about honing their skills.</p>
+      <p class="guarantee">30-day, hassle-free money back guarantee</p>
+
+      <p class="description">Gain access to our full library of tutorials along with expert code reviews. 
+      Perfect for any developers who are serious about honing their skills.</p>
+
+    </div>
   
   </section>
 
   <section id="subscription">
 
-    <h1>Monthly Subscription</h1>
+    <div class="content-wrapper">
 
-    <p>&dollar;29 per month</p>
+      <h1>Monthly Subscription</h1>
 
-    <p>Full access for less than &dollar;1 a day</p>
+      <p class="cost">&dollar;29 <span>per month</span></p>
 
-    <p>Sign Up</p>
+      <p>Full access for less than &dollar;1 a day</p>
+
+      <p class="button">Sign Up</p>
+
+    </div>
 
   </section>
 
-  <section id="why-us">
+  <section id="why">
 
-    <h1>Why Us</h1>
+    <div class="content-wrapper">
 
-    <p>
-      Tutorials by industry experts <br>
-      Peer &amp; expert code review <br>
-      Coding exercises <br>
-      Access to our GitHub repos <br>
-      Community forum <br>
-      Flashcard decks <br>
-      New videos every week <br>
-    </p>
+      <h1>Why Us</h1>
+
+      <p>
+        Tutorials by industry experts <br>
+        Peer &amp; expert code review <br>
+        Coding exercises <br>
+        Access to our GitHub repos <br>
+        Community forum <br>
+        Flashcard decks <br>
+        New videos every week <br>
+      </p>
+
+    </div>
 
   </section>
   
