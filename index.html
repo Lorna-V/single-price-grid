@@ -27,6 +27,7 @@
 
     .content-wrapper {
       padding: 10px 15px 25px 25px;
+      
     }
 
     h1 {
@@ -35,6 +36,8 @@
 
     #join {
       background-color: white; 
+      border-top-right-radius: 5px;
+      border-top-left-radius: 5px;
     }
 
     #join h1 {
@@ -95,6 +98,8 @@
       background-color: hsl(179, 43%, 50%);
       color:  hsl(204, 43%, 93%);
       padding-bottom: 0px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
     }
 
     #why p {
@@ -116,62 +121,103 @@
 
   }
 
+  /*Desktop Styles*/
+  @media only screen and (min-width: 1440px) {
+
+.join-container {
+  width: 600px;
+  margin: 150px 250px 0px 50px;
+}
+
+.subscription-why-container {
+  width: 600px;
+  flex-wrap: wrap;
+  margin: 0px 250px 0px 50px;
+}
+
+#subscription {
+  width: 300px;
+  float: left;
+  border-bottom-left-radius: 5px;
+}
+
+#why {
+  width: 300px;
+  float: left;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+}
+
+#why .content-wrapper {
+  padding-bottom: 21px;
+}
+
+}
+
   </style>
 
 </head>
 
 <body>
 
-  <section id="join">
+  <div class="join-container">
 
-    <div class="content-wrapper">
+    <section id="join">
 
-      <h1>Join our community</h1>
+      <div class="content-wrapper">
 
-      <p class="guarantee">30-day, hassle-free money back guarantee</p>
+        <h1>Join our community</h1>
 
-      <p class="description">Gain access to our full library of tutorials along with expert code reviews. 
-      Perfect for any developers who are serious about honing their skills.</p>
+        <p class="guarantee">30-day, hassle-free money back guarantee</p>
 
-    </div>
+        <p class="description">Gain access to our full library of tutorials along with expert code reviews. 
+        Perfect for any developers who are serious about honing their skills.</p>
+
+      </div>
   
-  </section>
+    </section>
 
-  <section id="subscription">
+  </div>
 
-    <div class="content-wrapper">
+  <div class="subscription-why-container">
 
-      <h1>Monthly Subscription</h1>
+    <section id="subscription">
 
-      <p class="cost">&dollar;29 <span>per month</span></p>
+      <div class="content-wrapper">
 
-      <p>Full access for less than &dollar;1 a day</p>
+        <h1>Monthly Subscription</h1>
 
-      <p class="button">Sign Up</p>
+        <p class="cost">&dollar;29 <span>per month</span></p>
 
-    </div>
+        <p>Full access for less than &dollar;1 a day</p>
 
-  </section>
+        <p class="button">Sign Up</p>
 
-  <section id="why">
+      </div>
 
-    <div class="content-wrapper">
+    </section>
 
-      <h1>Why Us</h1>
+    <section id="why">
 
-      <p>
-        Tutorials by industry experts <br>
-        Peer &amp; expert code review <br>
-        Coding exercises <br>
-        Access to our GitHub repos <br>
-        Community forum <br>
-        Flashcard decks <br>
-        New videos every week <br>
-      </p>
+      <div class="content-wrapper">
 
-    </div>
+        <h1>Why Us</h1>
 
-  </section>
+        <p>
+          Tutorials by industry experts <br>
+          Peer &amp; expert code review <br>
+          Coding exercises <br>
+          Access to our GitHub repos <br>
+          Community forum <br>
+          Flashcard decks <br>
+          New videos every week <br>
+        </p>
+
+      </div>
+
+    </section>
+
+  </div>
   
   <footer>
     <p class="attribution">
